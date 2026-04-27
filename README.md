@@ -10,13 +10,15 @@
 | **Nak** | Database Architect & Admin Module |
 | **Dara** | User Module & Testing |
 
-**Course:** Introduction to Computer Science  
+**Course:** Computer Science Survey
 **University:** American University of Phnom Penh (AUPP)  
 **Year:** 2026
 
 ---
 
 ## 📋 Project Description
+This is a Course Final Project submitted by 2 students from the
+American University of Phnom Penh (AUPP).
 
 The Student Management System is a terminal-based application that allows an **admin** to manage students, attendance, and assignments, while **students (users)** can view their own profile, attendance, and assignments after logging in.
 
