@@ -89,7 +89,7 @@ def delete_students():
 
     conn.commit()
     conn.close()
-    print(f"Succesfully delete student name:{student[1]}, ID:{student[0]} From the database")
+    print(f"Succesfully delete student name: {student[0]} From the database")
 
 def search_students():
     print("\n  ── Search Student ──────────────────────")
