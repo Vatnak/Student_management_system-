@@ -2,3 +2,4 @@ admin\__pycache__
 __pycache__
 .vscode
 user\__pycache__
+data\student_management.db
