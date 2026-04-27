@@ -1,6 +1,6 @@
 import os
 from db import create_tables
-from auth import seed_account, login
+from auth import seed_account, login, add_account
 
 from admin.student_CRUD import (
     add_students,
@@ -36,6 +36,7 @@ def admin_menu(account):
         print("  [6] View All Attendance")
         print("  [7] Add Assignment")
         print("  [8] View All Assignments")
+        print("  [9] Add new account")
         print("  [0] Logout")
         print("=" * 50)
 
@@ -49,6 +50,15 @@ def admin_menu(account):
         elif choice == "6": vieww_all_attendance()
         elif choice == "7": add_assignment()
         elif choice == "8": view_all_assignment()
+        elif choice == "9": 
+            username = input("Username: ").strip()
+            password = input("Password:  ").strip()
+            role = input("Role:  ").strip().lower()
+            student_id = None
+
+            if role == "user":
+                student_id = input("student ID:  ").strip()
+            add_account(username, password, role, student_id)
         elif choice == "0":
             print(f"\n  Logged out. Goodbye, {account['username']}!")
             break

@@ -1,4 +1,5 @@
 from db import connect
+from auth import add_account
 
 def add_students():
     print("\n  ── Add Student ─────────────────────────")
@@ -22,6 +23,11 @@ def add_students():
     conn.close()
 
     print(f"Student Added - {name} (ID:{student_id})")
+
+    username = name.lower()
+    password = name.lower() + "123"
+    add_account(username, password, "user", student_id)
+    print(f"Account created - Username: {username}, Password: {password}")
     return student_id
 
 

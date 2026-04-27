@@ -21,7 +21,7 @@ def seed_account():
 
 def add_account(username, password, role, student_id=None):
     if role not in ("admin", "user"):
-        print("Role must be  'admine' or 'user' ")
+        print("Role must be  'admin' or 'user' ")
         return False
     
     conn, cursor = connect()
